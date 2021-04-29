@@ -2555,6 +2555,7 @@ input, select, textarea {
 		text-decoration: none;
 		border-bottom: none;
 		position: relative;
+		
 	}
 
 		.icon:before {
@@ -4687,3 +4688,6 @@ input, select, textarea {
 		}
 
 	}
+#socialHeader {
+	text-align: center;
+}
