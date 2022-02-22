@@ -47,7 +47,19 @@
 						<!-- Featured Post -->
 							<article class="post featured">
 								<header class="major">
-									<span class="date">October 22, 2021</span>
+								
+									<script >
+										window.onload = function() {
+										const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+										const firstDate = new Date(2019, 09, 30);
+										const secondDate = new Date();
+
+										const diffDays = Math.round(Math.abs((firstDate - secondDate) / oneDay));
+										console.log(diffDays);
+										document.getElementById('totalDays').innerHTML =  `${diffDays} days and counting`;
+										}
+									</script>
+									<span class="date" id="totalDays"></span>
 									<h2><a href="#">Welcome to my<br />
 									journey</a></h2>
 									<p>Below is a list of projects that I have build.</p>
@@ -58,13 +70,13 @@
 							<section class="posts">
 								<article>
 									<header>
-										<span class="date">April 24, 2017</span>
-										<h2><a href="#">E-commerce</a></h2>
+										<span class="date">22 February, 2022</span>
+										<h2><a href="https://christiaan-nagel-christiaannagel.vercel.app/">Todo List</a></h2>
 									</header>
-									<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
-									<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+									<a href="https://christiaan-nagel-christiaannagel.vercel.app/" class="image fit"><img src="./images/Screenshot 2022-02-22 at 19.13.45.png" alt="" /></a>
+									<p>This project was built using Next.js and performs all CRUD functionality</p>
 									<ul class="actions special">
-										<li><a href="#" class="button">Check it out</a></li>
+										<li><a href="https://christiaan-nagel-christiaannagel.vercel.app/" class="button">Check it out</a></li>
 									</ul>
 								</article>
 								<article>
